@@ -12,6 +12,16 @@ struct TelephoneTemplateComponent: View {
     @State public var number : Int = 0
     @State public var name : String = ""
     
+    func call(number : Int) {
+        print("aaaaaaa")
+        var phoneNumber = "+55 (48) 99973-4977"
+        let tel = "tel://"
+        let formattedString = tel + phoneNumber
+        print(formattedString)
+        guard let url = URL(string: formattedString) else { return }
+        UIApplication.shared.open(url)
+    }
+    
     var body: some View {
         ZStack {
             
@@ -31,12 +41,14 @@ struct TelephoneTemplateComponent: View {
                 
                 Spacer()
                 
-                Button {
-                    
-                } label: {
-                    Image(systemName: "phone.fill")
-                        .foregroundColor(.pink)
-                }
+//                Button {
+//                    call(number: number)
+//                } label: {
+//                    Image(systemName: "phone.fill")
+//                        .foregroundColor(.pink)
+//                }
+                
+                Link("Ligar", destination: URL(string: "tel:\(number)")!)
             }
         }
     }

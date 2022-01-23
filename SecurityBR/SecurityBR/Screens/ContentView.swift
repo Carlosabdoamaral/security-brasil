@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Phone : Identifiable, Codable {
     var id = UUID()
+    var i : Int
     var phone : Int
     var name : String
 }
@@ -20,17 +21,17 @@ struct ContentView: View {
     @State var numbers : [Phone] = []
     
     func appendNumbers() {
-        let b1 : Phone = Phone(phone: 191, name: "Bombeiros")
-        let b2 : Phone = Phone(phone: 192, name: "Defesa Cívil")
-        let b3 : Phone = Phone(phone: 193, name: "Polícia")
-        let b4 : Phone = Phone(phone: 194, name: "PRF")
-        let b5 : Phone = Phone(phone: 195, name: "AAAA")
-        
-        numbers.append(b1)
-        numbers.append(b2)
-        numbers.append(b3)
-        numbers.append(b4)
-        numbers.append(b5)
+        numbers.append(Phone(i: 0, phone: 100, name: "Direitos Humanos"))
+        numbers.append(Phone(i: 1, phone: 118, name: "Disque Denúncia"))
+        numbers.append(Phone(i: 2, phone: 153, name: "Guarda Municipal"))
+        numbers.append(Phone(i: 3, phone: 180, name: "Atendimento à mulher"))
+        numbers.append(Phone(i: 4, phone: 190, name: "Polícia Militar"))
+        numbers.append(Phone(i: 5, phone: 191, name: "Polícia Rodoviária Federal"))
+        numbers.append(Phone(i: 6, phone: 192, name: "SAMU"))
+        numbers.append(Phone(i: 7, phone: 193, name: "Bombeiros"))
+        numbers.append(Phone(i: 8, phone: 197, name: "Polícia Civil"))
+        numbers.append(Phone(i: 9, phone: 198, name: "Polícia Rodoviária estadual"))
+        numbers.append(Phone(i: 10, phone: 199, name: "Defesa Civil"))
     }
     
     var body: some View {
@@ -46,7 +47,7 @@ struct ContentView: View {
                     List {
                         ForEach(numbers) { i in
                             TelephoneTemplateComponent(number: i.phone, name: i.name)
-//                                .searchable(text: $numbers[0].name)
+                                .searchable(text: $numbers[i.i].name)
                         }
                     }
                 }
