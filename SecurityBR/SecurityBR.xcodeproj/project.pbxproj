@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		982D0697279CF06D002CCC50 /* SecurityBRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D0696279CF06D002CCC50 /* SecurityBRApp.swift */; };
+		982D0699279CF06D002CCC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D0698279CF06D002CCC50 /* ContentView.swift */; };
+		982D069B279CF06E002CCC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D069A279CF06E002CCC50 /* Assets.xcassets */; };
+		982D069E279CF06E002CCC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D069D279CF06E002CCC50 /* Preview Assets.xcassets */; };
+		982D06A2279CF06E002CCC50 /* SecurityBR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 982D06A1279CF06E002CCC50 /* SecurityBR WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		982D06A7279CF06E002CCC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D06A6279CF06E002CCC50 /* Assets.xcassets */; };
+		982D06AD279CF06E002CCC50 /* SecurityBR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 982D06AC279CF06E002CCC50 /* SecurityBR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		982D06B2279CF06E002CCC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D06B1279CF06E002CCC50 /* ContentView.swift */; };
+		982D06B4279CF06E002CCC50 /* SecurityBRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D06B3279CF06E002CCC50 /* SecurityBRApp.swift */; };
+		982D06B6279CF06E002CCC50 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D06B5279CF06E002CCC50 /* ComplicationController.swift */; };
+		982D06B8279CF06F002CCC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D06B7279CF06F002CCC50 /* Assets.xcassets */; };
+		982D06BB279CF06F002CCC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D06BA279CF06F002CCC50 /* Preview Assets.xcassets */; };
+		982D06CF279CF0C0002CCC50 /* TelephoneTemplateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D06CE279CF0C0002CCC50 /* TelephoneTemplateComponent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		982D06A3279CF06E002CCC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 982D068B279CF06D002CCC50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 982D06A0279CF06E002CCC50;
+			remoteInfo = "SecurityBR WatchKit App";
+		};
+		982D06AE279CF06E002CCC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 982D068B279CF06D002CCC50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 982D06AB279CF06E002CCC50;
+			remoteInfo = "SecurityBR WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		982D06C2279CF06F002CCC50 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				982D06AD279CF06E002CCC50 /* SecurityBR WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982D06C6279CF06F002CCC50 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				982D06A2279CF06E002CCC50 /* SecurityBR WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		982D0693279CF06D002CCC50 /* SecurityBR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityBR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		982D0696279CF06D002CCC50 /* SecurityBRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityBRApp.swift; sourceTree = "<group>"; };
+		982D0698279CF06D002CCC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		982D069A279CF06E002CCC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		982D069D279CF06E002CCC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		982D06A1279CF06E002CCC50 /* SecurityBR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SecurityBR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		982D06A6279CF06E002CCC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		982D06AC279CF06E002CCC50 /* SecurityBR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SecurityBR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		982D06B1279CF06E002CCC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		982D06B3279CF06E002CCC50 /* SecurityBRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityBRApp.swift; sourceTree = "<group>"; };
+		982D06B5279CF06E002CCC50 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		982D06B7279CF06F002CCC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		982D06BA279CF06F002CCC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		982D06BC279CF06F002CCC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982D06CE279CF0C0002CCC50 /* TelephoneTemplateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneTemplateComponent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		982D0690279CF06D002CCC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982D06A9279CF06E002CCC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		982D068A279CF06D002CCC50 = {
+			isa = PBXGroup;
+			children = (
+				982D0695279CF06D002CCC50 /* SecurityBR */,
+				982D06A5279CF06E002CCC50 /* SecurityBR WatchKit App */,
+				982D06B0279CF06E002CCC50 /* SecurityBR WatchKit Extension */,
+				982D0694279CF06D002CCC50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		982D0694279CF06D002CCC50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				982D0693279CF06D002CCC50 /* SecurityBR.app */,
+				982D06A1279CF06E002CCC50 /* SecurityBR WatchKit App.app */,
+				982D06AC279CF06E002CCC50 /* SecurityBR WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		982D0695279CF06D002CCC50 /* SecurityBR */ = {
+			isa = PBXGroup;
+			children = (
+				982D06CD279CF09A002CCC50 /* Components */,
+				982D06CC279CF091002CCC50 /* App */,
+				982D06CA279CF087002CCC50 /* Screens */,
+				982D06CB279CF08C002CCC50 /* Assets */,
+				982D069C279CF06E002CCC50 /* Preview Content */,
+			);
+			path = SecurityBR;
+			sourceTree = "<group>";
+		};
+		982D069C279CF06E002CCC50 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				982D069D279CF06E002CCC50 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		982D06A5279CF06E002CCC50 /* SecurityBR WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				982D06A6279CF06E002CCC50 /* Assets.xcassets */,
+			);
+			path = "SecurityBR WatchKit App";
+			sourceTree = "<group>";
+		};
+		982D06B0279CF06E002CCC50 /* SecurityBR WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				982D06B1279CF06E002CCC50 /* ContentView.swift */,
+				982D06B3279CF06E002CCC50 /* SecurityBRApp.swift */,
+				982D06B5279CF06E002CCC50 /* ComplicationController.swift */,
+				982D06B7279CF06F002CCC50 /* Assets.xcassets */,
+				982D06BC279CF06F002CCC50 /* Info.plist */,
+				982D06B9279CF06F002CCC50 /* Preview Content */,
+			);
+			path = "SecurityBR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		982D06B9279CF06F002CCC50 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				982D06BA279CF06F002CCC50 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		982D06CA279CF087002CCC50 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				982D0698279CF06D002CCC50 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		982D06CB279CF08C002CCC50 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				982D069A279CF06E002CCC50 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		982D06CC279CF091002CCC50 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				982D0696279CF06D002CCC50 /* SecurityBRApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		982D06CD279CF09A002CCC50 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				982D06CE279CF0C0002CCC50 /* TelephoneTemplateComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		982D0692279CF06D002CCC50 /* SecurityBR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 982D06C7279CF06F002CCC50 /* Build configuration list for PBXNativeTarget "SecurityBR" */;
+			buildPhases = (
+				982D068F279CF06D002CCC50 /* Sources */,
+				982D0690279CF06D002CCC50 /* Frameworks */,
+				982D0691279CF06D002CCC50 /* Resources */,
+				982D06C6279CF06F002CCC50 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				982D06A4279CF06E002CCC50 /* PBXTargetDependency */,
+			);
+			name = SecurityBR;
+			productName = SecurityBR;
+			productReference = 982D0693279CF06D002CCC50 /* SecurityBR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		982D06A0279CF06E002CCC50 /* SecurityBR WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 982D06C3279CF06F002CCC50 /* Build configuration list for PBXNativeTarget "SecurityBR WatchKit App" */;
+			buildPhases = (
+				982D069F279CF06E002CCC50 /* Resources */,
+				982D06C2279CF06F002CCC50 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				982D06AF279CF06E002CCC50 /* PBXTargetDependency */,
+			);
+			name = "SecurityBR WatchKit App";
+			productName = "SecurityBR WatchKit App";
+			productReference = 982D06A1279CF06E002CCC50 /* SecurityBR WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		982D06AB279CF06E002CCC50 /* SecurityBR WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 982D06BF279CF06F002CCC50 /* Build configuration list for PBXNativeTarget "SecurityBR WatchKit Extension" */;
+			buildPhases = (
+				982D06A8279CF06E002CCC50 /* Sources */,
+				982D06A9279CF06E002CCC50 /* Frameworks */,
+				982D06AA279CF06E002CCC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SecurityBR WatchKit Extension";
+			productName = "SecurityBR WatchKit Extension";
+			productReference = 982D06AC279CF06E002CCC50 /* SecurityBR WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		982D068B279CF06D002CCC50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					982D0692279CF06D002CCC50 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					982D06A0279CF06E002CCC50 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					982D06AB279CF06E002CCC50 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 982D068E279CF06D002CCC50 /* Build configuration list for PBXProject "SecurityBR" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 982D068A279CF06D002CCC50;
+			productRefGroup = 982D0694279CF06D002CCC50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				982D0692279CF06D002CCC50 /* SecurityBR */,
+				982D06A0279CF06E002CCC50 /* SecurityBR WatchKit App */,
+				982D06AB279CF06E002CCC50 /* SecurityBR WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		982D0691279CF06D002CCC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982D069E279CF06E002CCC50 /* Preview Assets.xcassets in Resources */,
+				982D069B279CF06E002CCC50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982D069F279CF06E002CCC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982D06A7279CF06E002CCC50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982D06AA279CF06E002CCC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982D06BB279CF06F002CCC50 /* Preview Assets.xcassets in Resources */,
+				982D06B8279CF06F002CCC50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		982D068F279CF06D002CCC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982D0699279CF06D002CCC50 /* ContentView.swift in Sources */,
+				982D0697279CF06D002CCC50 /* SecurityBRApp.swift in Sources */,
+				982D06CF279CF0C0002CCC50 /* TelephoneTemplateComponent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982D06A8279CF06E002CCC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982D06B2279CF06E002CCC50 /* ContentView.swift in Sources */,
+				982D06B4279CF06E002CCC50 /* SecurityBRApp.swift in Sources */,
+				982D06B6279CF06E002CCC50 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		982D06A4279CF06E002CCC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 982D06A0279CF06E002CCC50 /* SecurityBR WatchKit App */;
+			targetProxy = 982D06A3279CF06E002CCC50 /* PBXContainerItemProxy */;
+		};
+		982D06AF279CF06E002CCC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 982D06AB279CF06E002CCC50 /* SecurityBR WatchKit Extension */;
+			targetProxy = 982D06AE279CF06E002CCC50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		982D06BD279CF06F002CCC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		982D06BE279CF06F002CCC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		982D06C0279CF06F002CCC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecurityBR WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Z86N6X4FM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SecurityBR WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SecurityBR WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosamaral.SecurityBR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		982D06C1279CF06F002CCC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecurityBR WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Z86N6X4FM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SecurityBR WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SecurityBR WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosamaral.SecurityBR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		982D06C4279CF06F002CCC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Z86N6X4FM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SecurityBR_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SecurityBR WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.carlosamaral.SecurityBR;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosamaral.SecurityBR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		982D06C5279CF06F002CCC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Z86N6X4FM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SecurityBR_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SecurityBR WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.carlosamaral.SecurityBR;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosamaral.SecurityBR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		982D06C8279CF06F002CCC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecurityBR/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Z86N6X4FM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosamaral.SecurityBR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		982D06C9279CF06F002CCC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecurityBR/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Z86N6X4FM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosamaral.SecurityBR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		982D068E279CF06D002CCC50 /* Build configuration list for PBXProject "SecurityBR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982D06BD279CF06F002CCC50 /* Debug */,
+				982D06BE279CF06F002CCC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		982D06BF279CF06F002CCC50 /* Build configuration list for PBXNativeTarget "SecurityBR WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982D06C0279CF06F002CCC50 /* Debug */,
+				982D06C1279CF06F002CCC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		982D06C3279CF06F002CCC50 /* Build configuration list for PBXNativeTarget "SecurityBR WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982D06C4279CF06F002CCC50 /* Debug */,
+				982D06C5279CF06F002CCC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		982D06C7279CF06F002CCC50 /* Build configuration list for PBXNativeTarget "SecurityBR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982D06C8279CF06F002CCC50 /* Debug */,
+				982D06C9279CF06F002CCC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 982D068B279CF06D002CCC50 /* Project object */;
+}
