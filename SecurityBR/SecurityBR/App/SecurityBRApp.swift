@@ -9,9 +9,30 @@ import SwiftUI
 
 @main
 struct SecurityBRApp: App {
+//    @AppStorage("isShowingInfos") var isShowingInfos : Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Menu")
+                    }
+                
+                MapView()
+                    .tabItem {
+                        Image(systemName: "map.fill")
+                        Text("Mapa")
+                    }
+                
+                AllPhonesView()
+                    .tabItem {
+                        Image(systemName: "list.dash")
+                        Text("Todos")
+                    }
+            }
         }
     }
 }

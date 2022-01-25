@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9806A070279F806F005CFCDF /* AllPhonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806A06F279F806F005CFCDF /* AllPhonesView.swift */; };
+		9806A072279F83F3005CFCDF /* ListHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806A071279F83F3005CFCDF /* ListHeaderComponent.swift */; };
 		982D0697279CF06D002CCC50 /* SecurityBRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D0696279CF06D002CCC50 /* SecurityBRApp.swift */; };
 		982D0699279CF06D002CCC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D0698279CF06D002CCC50 /* ContentView.swift */; };
 		982D069B279CF06E002CCC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D069A279CF06E002CCC50 /* Assets.xcassets */; };
@@ -20,6 +22,9 @@
 		982D06B8279CF06F002CCC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D06B7279CF06F002CCC50 /* Assets.xcassets */; };
 		982D06BB279CF06F002CCC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D06BA279CF06F002CCC50 /* Preview Assets.xcassets */; };
 		982D06CF279CF0C0002CCC50 /* TelephoneTemplateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D06CE279CF0C0002CCC50 /* TelephoneTemplateComponent.swift */; };
+		9881D1CA279EE8130086408B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881D1C9279EE8130086408B /* MapView.swift */; };
+		9881D1CD279F3BDF0086408B /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881D1CC279F3BDF0086408B /* UIScreen.swift */; };
+		9881D1CF279F45AC0086408B /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881D1CE279F45AC0086408B /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9806A06F279F806F005CFCDF /* AllPhonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPhonesView.swift; sourceTree = "<group>"; };
+		9806A071279F83F3005CFCDF /* ListHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderComponent.swift; sourceTree = "<group>"; };
 		982D0693279CF06D002CCC50 /* SecurityBR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityBR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		982D0696279CF06D002CCC50 /* SecurityBRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityBRApp.swift; sourceTree = "<group>"; };
 		982D0698279CF06D002CCC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +87,9 @@
 		982D06BA279CF06F002CCC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		982D06BC279CF06F002CCC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		982D06CE279CF0C0002CCC50 /* TelephoneTemplateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneTemplateComponent.swift; sourceTree = "<group>"; };
+		9881D1C9279EE8130086408B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9881D1CC279F3BDF0086408B /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		9881D1CE279F45AC0086408B /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,7 @@
 		982D0695279CF06D002CCC50 /* SecurityBR */ = {
 			isa = PBXGroup;
 			children = (
+				9881D1CB279F3BD20086408B /* Extensions */,
 				982D06CD279CF09A002CCC50 /* Components */,
 				982D06CC279CF091002CCC50 /* App */,
 				982D06CA279CF087002CCC50 /* Screens */,
@@ -173,6 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				982D0698279CF06D002CCC50 /* ContentView.swift */,
+				9881D1C9279EE8130086408B /* MapView.swift */,
+				9881D1CE279F45AC0086408B /* InfoView.swift */,
+				9806A06F279F806F005CFCDF /* AllPhonesView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -197,8 +211,17 @@
 			isa = PBXGroup;
 			children = (
 				982D06CE279CF0C0002CCC50 /* TelephoneTemplateComponent.swift */,
+				9806A071279F83F3005CFCDF /* ListHeaderComponent.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9881D1CB279F3BD20086408B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9881D1CC279F3BDF0086408B /* UIScreen.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,8 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				982D0699279CF06D002CCC50 /* ContentView.swift in Sources */,
+				9881D1CA279EE8130086408B /* MapView.swift in Sources */,
 				982D0697279CF06D002CCC50 /* SecurityBRApp.swift in Sources */,
 				982D06CF279CF0C0002CCC50 /* TelephoneTemplateComponent.swift in Sources */,
+				9806A072279F83F3005CFCDF /* ListHeaderComponent.swift in Sources */,
+				9806A070279F806F005CFCDF /* AllPhonesView.swift in Sources */,
+				9881D1CF279F45AC0086408B /* InfoView.swift in Sources */,
+				9881D1CD279F3BDF0086408B /* UIScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

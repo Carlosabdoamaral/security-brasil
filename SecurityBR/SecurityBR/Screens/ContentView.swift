@@ -17,6 +17,7 @@ struct Phone : Identifiable, Codable {
 struct ContentView: View {
     
     @State private var searchText : String = ""
+    @State private var isShowingInfos : Bool = false
     
     @State var numbers : [Phone] = []
     
@@ -56,6 +57,12 @@ struct ContentView: View {
             .navigationBarItems(
                 trailing:
                     Image(systemName: "info.circle")
+                    .onTapGesture {
+                        isShowingInfos.toggle()
+                    }
+                    .sheet(isPresented: $isShowingInfos, content: {
+                        InfoView()
+                    })
             )
         }
         .onAppear(perform: appendNumbers)
