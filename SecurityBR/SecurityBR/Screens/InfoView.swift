@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct InfoView: View {
+    
+    let githubURL = URL(string: "https://github.com/Carlosabdoamaral/SecurityBrasil") ?? URL(string: "https://apple.com")
+    
     var body: some View {
         ZStack {
             VStack {
@@ -29,6 +32,8 @@ struct InfoView: View {
                             .fontWeight(.semibold)
                         Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a est tellus.")
                     }
+                    
+                    Spacer()
                 }
                 .padding()
                 
@@ -43,8 +48,12 @@ struct InfoView: View {
                     VStack(alignment: .leading) {
                         Text("Código fonte")
                             .fontWeight(.semibold)
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a est tellus.")
+                        Link(destination: githubURL!) {
+                            Text("Github")
+                        }
                     }
+                    
+                    Spacer()
                 }
                 .padding()
                 

@@ -19,32 +19,28 @@ struct ContentView: View {
     @State private var searchText : String = ""
     @State private var isShowingInfos : Bool = false
     
-    @State var numbers : [Phone] = []
+    @State var numbers : [Phone] = [
+        Phone(i: 0, phone: 100, name: "Direitos Humanos"),
+        Phone(i: 1, phone: 118, name: "Disque Denúncia"),
+        Phone(i: 2, phone: 153, name: "Guarda Municipal"),
+        Phone(i: 3, phone: 180, name: "Atendimento à mulher"),
+        Phone(i: 4, phone: 190, name: "Polícia Militar"),
+        Phone(i: 5, phone: 191, name: "Polícia Rodoviária Federal"),
+        Phone(i: 6, phone: 192, name: "SAMU"),
+        Phone(i: 7, phone: 193, name: "Bombeiros"),
+        Phone(i: 8, phone: 197, name: "Polícia Civil"),
+        Phone(i: 9, phone: 198, name: "Polícia Rodoviária estadual"),
+        Phone(i: 10, phone: 199, name: "Defesa Civil")
+    ]
     
     func appendNumbers() {
-        numbers.append(Phone(i: 0, phone: 100, name: "Direitos Humanos"))
-        numbers.append(Phone(i: 1, phone: 118, name: "Disque Denúncia"))
-        numbers.append(Phone(i: 2, phone: 153, name: "Guarda Municipal"))
-        numbers.append(Phone(i: 3, phone: 180, name: "Atendimento à mulher"))
-        numbers.append(Phone(i: 4, phone: 190, name: "Polícia Militar"))
-        numbers.append(Phone(i: 5, phone: 191, name: "Polícia Rodoviária Federal"))
-        numbers.append(Phone(i: 6, phone: 192, name: "SAMU"))
-        numbers.append(Phone(i: 7, phone: 193, name: "Bombeiros"))
-        numbers.append(Phone(i: 8, phone: 197, name: "Polícia Civil"))
-        numbers.append(Phone(i: 9, phone: 198, name: "Polícia Rodoviária estadual"))
-        numbers.append(Phone(i: 10, phone: 199, name: "Defesa Civil"))
+        
     }
     
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
-//                    TextField("Pesquisar...", text: $searchText)
-//                        .frame(height: 35)
-//                        .padding(.leading)
-//                        .background(.gray.opacity(0.2))
-//                        .cornerRadius(5)
-//                        .padding()
                     List {
                         ForEach(numbers) { i in
                             TelephoneTemplateComponent(number: i.phone, name: i.name)
