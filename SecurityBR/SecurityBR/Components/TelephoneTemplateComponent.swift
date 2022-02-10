@@ -13,7 +13,6 @@ struct TelephoneTemplateComponent: View {
     @State public var name : String = ""
     
     func call(number : Int) {
-        print("aaaaaaa")
         var phoneNumber = "+55 (48) 99973-4977"
         let tel = "tel://"
         let formattedString = tel + phoneNumber

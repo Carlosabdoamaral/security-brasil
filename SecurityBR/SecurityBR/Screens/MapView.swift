@@ -25,7 +25,7 @@ struct MapView: View {
             ZStack {
                 Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .constant(.follow))
                     .frame(width: UIScreen.maxwidth, height: UIScreen.maxheight)
-                    .edgesIgnoringSafeArea(.all)
+                    .edgesIgnoringSafeArea([.top, .horizontal])
             }
             .navigationTitle("Map")
         }
