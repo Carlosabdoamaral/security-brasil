@@ -27,7 +27,7 @@ struct MapView: View {
                     .frame(width: UIScreen.maxwidth, height: UIScreen.maxheight)
                     .edgesIgnoringSafeArea([.top, .horizontal])
             }
-            .navigationTitle("Map")
+            .navigationTitle("Mapa")
         }
     }
 }

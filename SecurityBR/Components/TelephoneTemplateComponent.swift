@@ -10,16 +10,7 @@ import SwiftUI
 struct TelephoneTemplateComponent: View {
     
     @State public var number : Int = 0
-    @State public var name : String = ""
-    
-    func call(number : Int) {
-        var phoneNumber = "+55 (48) 99973-4977"
-        let tel = "tel://"
-        let formattedString = tel + phoneNumber
-        print(formattedString)
-        guard let url = URL(string: formattedString) else { return }
-        UIApplication.shared.open(url)
-    }
+    @State public var name : String = "Corpo de bombeiros"
     
     var body: some View {
         ZStack {
@@ -27,7 +18,7 @@ struct TelephoneTemplateComponent: View {
             HStack {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: 5, height: 40)
-                    .foregroundColor(.pink)
+                    .foregroundColor(.green)
                 VStack(alignment: .leading) {
                     Text("\(number)")
                         .font(.title3)
@@ -36,6 +27,7 @@ struct TelephoneTemplateComponent: View {
                     Text("\(name)")
                         .font(.footnote)
                         .lineLimit(1)
+                        .foregroundColor(Color.gray)
                 }
                 
                 Spacer()
@@ -48,6 +40,7 @@ struct TelephoneTemplateComponent: View {
 //                }
                 
                 Link("Ligar", destination: URL(string: "tel:\(number)")!)
+                    .padding(.trailing, 20)
             }
         }
     }

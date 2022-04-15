@@ -12,4 +12,6 @@ struct Phone : Identifiable, Codable {
     var i : Int
     var phone : Int
     var name : String
+    var category : String
+    var description : String
 }

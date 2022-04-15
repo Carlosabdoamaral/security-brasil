@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var searchText : String = ""
     @State private var isShowingInfos : Bool = false
     
-    @State var numbers : [Phone] = numbersArr
+    @State var numbers : [Phone] = PhonesData
     
     func appendNumbers() {
         
